@@ -1,5 +1,5 @@
 /**
- * Stylesheet for Portfolio
+ * Stylesheet for Responsive Portfolio
  **/
 
 body {
@@ -15,10 +15,11 @@ body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -80px;
+    width: auto;
 }
 
 header {
-    /* position: absolute; */
+    /* position: static; */
     background: #ffffff;
     width: auto;
     height: auto;
@@ -27,13 +28,21 @@ header {
     text-align: center;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 30px;
+    top: 0;
     /* height: 48px; */
     /* margin: 0 auto; */
+    /* width: 960px;
+    margin: 0 auto;
+    height: auto;
+    top: 0; */
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
+    height: auto;
+    top: 0;
+
 }
 
 a {
@@ -52,7 +61,7 @@ a {
     width: 30%;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* margin-left: 10%; */
+    height: auto;
 }
 
 .nav {
@@ -65,6 +74,7 @@ a {
     width: 10%;
     padding-top: 30px;
     padding-bottom: 30px;
+    top: 0;
     /* height: 100px; */
     /* padding: 20px; */
     /* margin-right: 10%; */
@@ -111,8 +121,9 @@ footer {
     font-size: 10px;
     border-top: 10px solid #4aaaa5;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     height: 80px;
     vertical-align: text-bottom;
 }
@@ -155,7 +166,7 @@ input[type=submit] {
 @media screen and (max-width: 640px) {
 
     body {
-
+        /* width: auto; */
     }
 
         /* The wrapper's width will be 600px */
@@ -165,7 +176,7 @@ input[type=submit] {
 
     header {
         position: static;
-        width: 100%;
+        width: auto;
 
         background: #ffffff;
         height: auto;
@@ -175,11 +186,12 @@ input[type=submit] {
     }
 
     .container {
-        width: 100%;
+        width: auto;
     }
 
     a {
-
+        width: auto;
+ 
     }
     
     .name {
@@ -191,7 +203,7 @@ input[type=submit] {
         text-decoration: none;
         background: #4aaaa5;
         text-align: center;
-        width: 30%;
+        width: auto;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -204,17 +216,117 @@ input[type=submit] {
         color: #666666;
         background: #ffffff;
         text-align: center;
-        width: 10%;
+        width: auto;
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
     section {
-
+        width: 100%;
     }
 
     footer {
         width: 100%;
     }
 }
-  
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 728px;
+      }
+
+      .container {
+        width: auto;
+    }
+
+    a {
+        width: auto;
+ 
+    }
+    
+    .name {
+        float: none;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        background: #4aaaa5;
+        text-align: center;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .nav {
+        float: none;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #666666;
+        background: #ffffff;
+        text-align: center;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper {
+        width: 940px;
+      }
+      .container {
+        width: auto;
+    }
+
+    a {
+        width: auto;
+ 
+    }
+    
+    .name {
+        float: none;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        background: #4aaaa5;
+        text-align: center;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .nav {
+        float: none;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #666666;
+        background: #ffffff;
+        text-align: center;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }  
+
+}
